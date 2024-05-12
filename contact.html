@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div class="flex flex-row gap-2 items-center">
+                <img class="w-12 h-12" src="flower.png">
+                <span class="text-2xl text-blue-600 ">Flower</span>
+            </div>
+            <div
+                class="nav-links md:static absolute md:min-h-fit bg-white min-h-[60vh] left-0 -top-[100%]  md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-8 uppercase gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="bg-gray-500 text-white px-5 py-2 rounded-full hover:bg-blue-800">Sign In</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="w-8 h-8 cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <script>
+        const navLinks = document.querySelector('.nav-Links');
+
+        function onToggleMenu(e) {
+            // Assuming e has a custom 'name' property and you want to toggle it between 'menu' and 'close'
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+
+            // Toggle the 'top-[9%]' class on navLinks
+            navLinks.classList.toggle('top-[9p]');
+        }
+
+    </script>
+    <div
+        class="flex items-center justify-center flex-col mt-10 bg-gradient-to-br from-purple-50 via-orange-50 to-transparent gap-6 p-4">
+        <h1 class="uppercase font-bold text-xl text-orange-800">Contact Us</h1>
+        <h2 class="font-bold text-5xl leading-snug">Get in Touch with Our Experts Team.</h2>
+        <p class="text-justify lg:pl-60 lg:pr-60 font-medium">Share some details here. This is Flexible section where
+            you can share anything you want</p>
+    </div>
+    <div class="mt-10 p-8 flex flex-col lg:flex lg:flex-row border gap-8 items-center justify-center">
+        <div class=" gap-4 p-4">
+            <div class="gap-2">
+            <h1 class="font-bold text-5xl text-orange-800">Get In Touch with Us </h1>
+            <p>Share some details here. This is Flexible section where
+                you can share anything you want</p>
+            </div>
+            <div class="gap-4">
+                <h1 class="font-medium text-xl">Address</h1>
+                <span>2972 Westheimer Rd.Santa Ana, lllinios 85486</span>
+                <div class="class">
+                    <div class="gap-2">
+                        <h1 class="font-medium text-xl">Phone</h1>
+                        <span>(+91) 9811413817</span>
+                    </div>
+                    <div class="class">
+                        <h1 class="font-medium text-xl">Email</h1>
+                        <span>info@contact.com</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h1 class="font-medium text-xl">Social Medai</h1>
+                        <div class="flex flex-row gap-2">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <ion-icon name="logo-youtube"></ion-icon>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+        <div class="right flex flex-col bg-white mx-14 m-8 rounded-3xl text-xl w-1/4 relative gap-6 border border-black p-8">
+            <input class="px-4 py-2 my-1 outline-blue-600 border-2 border-bg-black rounded-3x ltext-black font-bold"
+                type="name" placeholder="Enter your name">
+                <input class="px-4 py-2 my-1 outline-blue-600 border-2 border-bg-black rounded-3x ltext-black font-bold"
+                type="email" placeholder="Enter your email">
+                <input class="px-4 py-2 my-1 outline-blue-600 border-2 border-bg-black rounded-3x ltext-black font-bold"
+                type="password" placeholder="Enter your password">
+                <input class="px-4 py-2 my-1 outline-blue-600 border-2 border-bg-black rounded-3x ltext-black font-bold"
+                type="message" placeholder="Enter your message">
+                <button class="rounded-3xl px-4 py-2 bg-orange-600 border border-blue-200 text-white hover:bg-blue-800">Submmit
+                    </button>
+        </div>
+    </div>
+    </div>
+    <hr class="bg-black mt-6">
+    <footer class="mt-6 flex flex-col lg:flex lg:flex-row p-4 gap-8 items-center justify-center">
+        <div class="flex flex-col gap-3 items-center">
+            <div class="flex flex-row gap-2 items-center ">
+                <img class="w-12 h-12" src="flower.png">
+                <span class="text-2xl text-blue-600 ">Flower</span>
+            </div>
+            <span class="font-medium">Flowershop321@gmail.com</span>
+        </div>
+        <div class="flex flex-col gap-2 items-center">
+            <h1 class="font-bold text-xl">Links</h1>
+            <ul class="flex flex-row lg:flex lg:flex-col gap-4">
+                <li>
+                    <a class="hover:text-gray-500" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="shop.html">Shop</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col gap-2">
+            <h1 class="font-bold text-center">Contact us</h1>
+            <div class="flex flex-col items-center text-justify gap-1 ">
+                <span>Address: 13FiFth Avenue, New York 101660</span>
+                <span>Email: Contact@info.com</span>
+                <span>Phone: +9811413817</span>
+            </div>
+        </div>
+    </footer>
+    <hr class="bg-black">
+    <div class="items-center justify-center flex flex-col mt-3 gap-2 mb-3">
+        <h1>Copyright@2024flowershop</h1>
+        <div class="flex flex-row gap-4 items-center">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+        </div>
+    </div>
+</body>
+
+</html>

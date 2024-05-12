@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div class="flex flex-row gap-2 items-center">
+                <img class="w-12 h-12" src="flower.png">
+                <span class="text-2xl text-blue-600 ">Flower</span>
+            </div>
+            <div
+                class="nav-links md:static absolute md:min-h-fit bg-white min-h-[60vh] left-0 -top-[100%]  md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-8 uppercase gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="bg-gray-500 text-white px-5 py-2 rounded-full hover:bg-blue-800">Sign In</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="w-8 h-8 cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <script>
+        const navLinks = document.querySelector('.nav-Links');
+
+        function onToggleMenu(e) {
+            // Assuming e has a custom 'name' property and you want to toggle it between 'menu' and 'close'
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+
+            // Toggle the 'top-[9%]' class on navLinks
+            navLinks.classList.toggle('top-[9p]');
+        }
+
+    </script>
+    <div class="items-center justify-center mt-10 bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
+        <h1 class="text-orange-800 text-5xl text-center">Shop</h1>
+    </div>
+    <div class="flex flex-col lg:flex lg:flex-row">
+        <div class="flex flex-col lg:flex lg:flex-row gap-3 p-2 mt-10">
+            <div class="flex flex-row gap-3 lg:flex lg:flex-row ">
+                <div class="flex flex-col gap-3 items-center ">
+                    <img class="w-96 h-60 " src="water-lily.jpg">
+                    <h1>Flower</h1>
+                    <span class="font-semibold text-xl">Custom Floral</span>
+                    <div class="flex flex-row">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <h1 class="font-medium">$86.00</h1>
+                </div>
+                <div class="flex flex-col gap-3 items-center ">
+                    <img class="w-96 h-60 " src="man-2609375_1280.jpg">
+                    <h1>Flower</h1>
+                    <span class="font-semibold text-xl">Periwinkle Flower</span>
+                    <div class="flex flex-row">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <h1 class="font-medium">$199.00</h1>
+                </div>
+            </div>
+            <div class="flex flex-row gap-3 lg:flex lg:flex-row ">
+                <div class="flex flex-col gap-3 items-center">
+                    <img class="w-96 h-60 " src="sunflowers.jpg">
+                    <h1>Flower</h1>
+                    <span class="font-semibold text-xl">Periwinkle Flower</span>
+                    <div class="flex flex-row">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <h1 class="font-medium">$56.00</h1>
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <img class="w-96 h-60 " src="cosmo.jpg">
+                    <h1>Flower</h1>
+                    <span class="font-semibold text-xl">Cosmo Flower</span>
+                    <div class="flex flex-row">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <h1 class="font-medium">$199.00</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="flex flex-col lg:flex lg:flex-row">
+        <div class="flex flex-col lg:flex lg:flex-row gap-3 p-2">
+            <div class="flex flex-row gap-3 lg:flex lg:flex-row ">
+                <div class="flex flex-col gap-3 items-center">
+                    <img class="w-96 h-60 " src="girl.jpg">
+                    <h1>Flower</h1>
+                    <span class="font-semibold text-xl">Tulip custo Flower</span>
+                    <div class="flex flex-row">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <h1 class="font-medium">$129.00</h1>
+                </div>
+                <div class="flex flex-col gap-3 items-center ">
+                    <img class="w-96 h-60 " src="hands.jpg">
+                    <h1>Flower</h1>
+                    <span class="font-semibold text-xl">Custom Floral</span>
+                    <div class="flex flex-row">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <h1 class="font-medium">$99.00</h1>
+                </div>
+            </div>
+            <div class="flex flex-row gap-3 lg:flex lg:flex-row ">
+                <div class="flex flex-col gap-3 items-center">
+                    <img class="w-96 h-60 " src="water-lily-2.jpg">
+                    <h1>Flower</h1>
+                    <span class="font-semibold text-xl">water-lily-2</span>
+                    <div class="flex flex-row">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <h1 class="font-medium">$86.00</h1>
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <img class="w-96 h-60 " src="flowers-1.jpg">
+                    <h1>Flower</h1>
+                    <span class="font-semibold text-xl">Sunflowers</span>
+                    <div class="flex flex-row">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <h1 class="font-medium">$86.00</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr class="bg-black mt-6">
+    <footer class="mt-6 flex flex-col lg:flex lg:flex-row p-4 gap-8 items-center justify-center">
+        <div class="flex flex-col gap-3 items-center">
+            <div class="flex flex-row gap-2 items-center ">
+                <img class="w-12 h-12" src="flower.png">
+                <span class="text-2xl text-blue-600 ">Flower</span>
+            </div>
+            <span class="font-medium">Flowershop321@gmail.com</span>
+        </div>
+        <div class="flex flex-col gap-2 items-center">
+            <h1 class="font-bold text-xl">Links</h1>
+            <ul class="flex flex-row lg:flex lg:flex-col gap-4">
+                <li>
+                    <a class="hover:text-gray-500" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="shop.html">Shop</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col gap-2">
+            <h1 class="font-bold text-center">Contact us</h1>
+            <div class="flex flex-col items-center text-justify ">
+                <span>Address: 13FiFth Avenue, New York 101660</span>
+                <span>Email: Contact@info.com</span>
+                <span>Phone: +9811413817</span>
+            </div>
+        </div>
+    </footer>
+    <hr class="bg-black">
+    <div class="items-center justify-center flex flex-col mt-3 gap-2 mb-3">
+        <h1>Copyright@2024flowershop</h1>
+        <div class="flex flex-row gap-4 items-center">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+        </div>
+    </div>
+</body>
+
+</html>
